@@ -8,7 +8,7 @@
 
 - Clone this repo:
 ```
-git clone https://github.com/ZihaoWang2000/zihaoblog?tab=readme-ov-file
+git clone https://github.com/ZihaoWang2000/zihaoblog
 ```
 
 - Install all the dependencies:
