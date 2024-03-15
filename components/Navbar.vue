@@ -24,14 +24,14 @@
       </li>
 
       <li class="navbar-item">
-        <NuxtLink to="/blog" class="navbar-link">
-          {{ $t('pageTitles.blog') }}
+        <NuxtLink to="/plog" class="navbar-link">
+          {{ $t('pageTitles.plog') }}
         </NuxtLink>
       </li>
 
       <li class="navbar-item">
-        <NuxtLink to="/github" class="navbar-link">
-          {{ $t('pageTitles.github') }}
+        <NuxtLink to="/contact" class="navbar-link">
+          {{ $t('pageTitles.contact') }}
         </NuxtLink>
       </li>
     </ul>

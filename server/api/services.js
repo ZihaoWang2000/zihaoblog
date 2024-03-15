@@ -4,42 +4,54 @@ export default defineEventHandler(() => {
   return [
     {
       id: 1,
-      title: 'React',
-      description: {
-        en: 'I build modern and advanced websites and applications with React or Expo by React Native.',
-        id_ID: 'Saya membuat situs web dan aplikasi modern menggunakan React atau Expo dari React Native.',
+      title: {
+        en: 'Multimedia Technology',
+        id_ID:'多媒体技术',
       },
-      icon: 'devicon:react',
+      description: {
+        en: 'I like to explore multimedia technology such as graphic design, video clip, and effects making.',
+        id_ID: '我喜欢探索诸如平面设计、视频剪辑与特效制作之类的多媒体技术。',
+      },
+      icon: 'devicon:photoshop',
       image: null,
     },
     {
       id: 2,
-      title: 'Vue',
-      description: {
-        en: 'I use Vue, a modern JavaScript and Typescript framework, while making dynamic and static websites and applications.',
-        id_ID: 'Terkadang saya juga menggunakan Vue, framework JavaScript dan Typescript sumber terbuka modern, ketika membuat website maupun aplikasi.',
+      title: {
+        en: 'Data Analysis',
+        id_ID:'数据分析',
       },
-      icon: 'devicon:vuejs',
+      description: {
+        en: 'I\'m willing to insight into business-related problems with data analysis.',
+        id_ID: '我愿意通过数据分析以洞悉业务相关的问题。',
+      },
+      icon: 'devicon:jupyter',
       image: null,
     },
     {
       id: 3,
-      title: 'Kotlin',
-      description: {
-        en: 'For an app, I also use Kotlin.',
-        id_ID: 'Untuk membuat aplikasi, saya juga menggunakan Kotlin.',
+      title: {
+        en: 'Anime',
+        id_ID:'日本动画',
       },
-      icon: 'devicon:kotlin',
+      description: {
+        en: 'I love Japanese animes and the unbridled imagination in them.',
+        id_ID: '我喜欢日本动画以及其中天马行空的想象力。',
+      },
+      icon: 'cib:crunchyroll',
       image: null,
     },
     {
       id: 4,
-      title: 'Python',
-      description: {
-        en: 'In Cybersecurity, I use Python, SQL, Java/JavaScript, C++, etc. But Python is the language I use more often.',
-        id_ID: 'Dalam bidang Keamanan Siber, saya menggunakan Python, SQL, Java/JavaScript, C++, dll. Tapi Python adalah bahasa yang lebih sering saya gunakan.',
+      title: {
+        en: 'Travel',
+        id_ID:'旅行',
       },
-      icon: 'devicon:python',
+      description: {
+        en: 'Travelling to all over the world is one of my dreams.',
+        id_ID: '环游世界也是我的梦想之一。',
+      },
+      icon: 'logos:google-maps',
       image: null,
     },
   ]

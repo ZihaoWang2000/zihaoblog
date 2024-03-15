@@ -28,11 +28,15 @@ function changeFilter(id) {
 const activeItem = ref({})
 const activeModal = ref(false)
 const activeOverlay = ref(false)
+const title = ref('')
+
 
 function showItem(id) {
   activeItem.value = projects.value.find(item => item.id === id)
   activeModal.value = true
   activeOverlay.value = true
+  const titleKey = locale.value === 'en' ? 'en' : 'id_ID'
+  title.value = activeItem.value.title[titleKey]
 }
 
 function closeItem() {
@@ -40,6 +44,7 @@ function closeItem() {
   activeModal.value = false
   activeOverlay.value = false
 }
+
 </script>
 
 <template>
@@ -79,7 +84,7 @@ function closeItem() {
         <ul class="select-list">
           <li class="select-item">
             <button @click="changeFilter(0)">
-              All
+              {{ locale === 'en' ? 'All' : '全部' }}
             </button>
           </li>
 
@@ -103,7 +108,7 @@ function closeItem() {
               <img :src="project.image" :alt="project.title" loading="lazy">
             </figure>
 
-            <h3 class="project-title">{{ project.title }}</h3>
+            <h3 class="project-title">{{ locale === 'en' ? project.title?.en : project.title?.id_ID }}</h3>
 
             <p class="project-category">{{ locale === 'en' ? project.category.title?.en : project.category.title?.id_ID }}</p>
 
@@ -121,13 +126,13 @@ function closeItem() {
 
           <div>
             <figure>
-              <img :src="activeItem.image" class="rounded-lg" :alt="activeItem.title">
+              <img :src="activeItem.image" class="rounded-lg" :alt="activeItem.title" style="margin: auto;">
             </figure>
           </div>
 
           <div class="modal-content space-y-3 mt-4">
             <h4 class="h3 modal-title">
-              {{ activeItem.title }}
+              {{ title }}
             </h4>
 
             <small class="flex items-center justify-start gap-2 text-gray-500">

@@ -23,7 +23,7 @@ function changeLang() {
 
 <template>
   <div class="cursor-pointer transition-all fade" @click="changeLang()">
-    <img :src="`/flags/${locale}.png`" class="h-6">
+    <img :src="`/flags/${locale}.png`" class="h-3">
   </div>
 </template>
 

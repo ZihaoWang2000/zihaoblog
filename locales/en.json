@@ -2,10 +2,10 @@
     "hello": "Hello",
     "goodbye": "Good Bye",
     "pageTitles": {
-        "about": "About",
+        "about": "About Me",
         "resume": "Resume",
         "portfolio": "Portfolio",
-        "blog": "Blog",
-        "github": "Github"
+        "plog": "Plog",
+        "contact": "Contact"
     }
 }

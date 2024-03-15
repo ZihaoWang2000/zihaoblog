@@ -3,6 +3,7 @@ const color = useColorMode()
 
 function toggleDark() {
   color.preference = color.value === 'dark' ? 'light' : 'dark'
+  console.log(color.preference);
 }
 const themeColor = computed(() => {
   return color.value
@@ -10,5 +11,5 @@ const themeColor = computed(() => {
 </script>
 
 <template>
-  <Button :icon="themeColor === 'dark' ? 'pi pi-sun' : 'pi pi-moon'" @click="toggleDark" />
+  <Button :icon="themeColor === 'dark' ? 'pi pi-sun' : 'pi pi-moon'" @click="toggleDark" ></Button>
 </template>

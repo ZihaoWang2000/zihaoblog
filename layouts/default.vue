@@ -7,17 +7,17 @@ useHead({
     lang: locale,
   },
   titleTemplate: (pageTitle) => {
-    return pageTitle ? `${pageTitle} - Agcrismanto Budhi Praswastyka ` : 'Agcrismanto Budhi Praswastyka'
+    return pageTitle ? `${pageTitle} - Zihao Wang ` : 'Zihao Wang'
   },
   meta: [
       { charset: 'utf-8' },
-      { name: 'description', content: 'Personal site about Agcrismanto Budhi Praswastyka.' },
+      { name: 'description', content: 'Personal site about Zihao Wang.' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'og:image', content: 'https://v2.amp-cdn.net/images/480468a77ad0a1a6b1b2e773d9371249e13e3ca2aff757' }
+      { name: 'og:image', content: 'https://raw.githubusercontent.com/ZihaoWang2000/zihaoblog/main/IMG_3050.jpeg' }
     ],
   link: [
     {
-      rel: 'icon', type: 'image/png', href: '../images/icon.png',
+      rel: 'icon', type: 'image/jpg', href: '../images/icon.jpg',
     },
     {
       rel: 'preconnect',

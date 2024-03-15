@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-full flex items-center justify-center">
     <h2 class="animate">
-      <img src="/images/loading.png" class="w-40">
+      <img src="/images/loading2.gif" class="w-600">
     </h2>
   </div>
 </template>

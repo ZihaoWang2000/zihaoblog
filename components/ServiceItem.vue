@@ -16,13 +16,13 @@ const { locale } = useI18n({ useScope: 'global' })
 <template>
   <li class="service-item">
     <div class="service-icon-box">
-      <img v-if="service.image !== null && service.icon !== ''" :src="service.image" alt="mobile app icon" class="w-40">
+      <img v-if="service.image !== null && service.icon !== ''" :src="service.image" alt="mobile app icon" >
       <Icon v-else :icon="service.icon" class="text-ranko-500 text-[3rem] mx-auto" style="width: 40px" />
     </div>
 
     <div class="service-content-box">
       <h4 class="h4 service-item-title">
-        {{ service.title }}
+        {{ locale === 'en' ? service.title?.en : service.title?.id_ID }}
       </h4>
 
       <p class="service-item-text">
